@@ -8,7 +8,7 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "eject": "expo eject",
-    "api": "nodemon apiServer.js"
+    "api": "node apiServer.js"
   },
   "dependencies": {
     "dotenv": "^16.0.0",
