@@ -41,17 +41,17 @@ module.exports = {
 
     ds_monan: (req, res) => {
 
-        const mongoClient = require('mongodb').MongoClient;
-        mongoClient.connect('mongodb://127.0.0.1:27017/CookingRecipe', function(err, db) {
-        if (err) throw err;
-        var monan = db.collection('MonAn');
-         monan.findOne({}, function (err,resx) {
+       // const mongoClient = require('mongodb').MongoClient;
+       // mongoClient.connect('mongodb://127.0.0.1:27017/CookingRecipe', function(err, db) {
+       // if (err) throw err;
+        //var monan = db.collection('MonAn');
+        // monan.findOne({}, function (err,resx) {
  
          if (err) throw err;
-          res.json(resx);
-     });
+          res.json({message:'winxclub',data: true);
+     //});
      db.close();
- });
+ //});
    },
 
 
