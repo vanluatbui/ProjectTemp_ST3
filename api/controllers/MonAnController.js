@@ -48,7 +48,7 @@ module.exports = {
         // monan.findOne({}, function (err,resx) {
  
          if (err) throw err;
-          res.json({message:'winxclub',data: true);
+          res.json({message:'winxclub',data: true});
      //});
      db.close();
  //});
