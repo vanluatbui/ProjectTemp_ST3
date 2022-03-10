@@ -1,4 +1,8 @@
 module.exports = function(app) {
+  
+  let x = require('./controllers/WinxController');
+  app.route('/Stella')
+  .get(x.stella);
 
   // --------------------------------------------API of User------------------------------------------------------------------------------------
 
